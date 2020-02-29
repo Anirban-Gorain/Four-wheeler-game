@@ -1,0 +1,403 @@
+/* Project date 2020, Starting-Fabruary:1, Ending-Fabruary:28 */
+/* CSS style on here */
+/*
+01)Universal.
+01)Body.
+02)Element of roads.
+03)My car section.
+04)Clouds.
+05)Control section.
+06)Score section.
+07)Enemy car section.
+08.Coin.
+09)Footer.
+*/
+/* Universal */
+:root {
+    --TRANSISTION: 1s;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+    transition: 0.100s;
+}
+
+/* body {
+    Code here...
+} */
+
+/* Element of roads */
+._elements_Of_Roads {
+    width: 100vw;
+    height: 100vh;
+}
+
+body ._elements_Of_Roads ._only_Black_Road {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/_images/_road.png);
+    background-color: rgba(30, 194, 223, 0);
+}
+
+body ._elements_Of_Roads ._under_Of_The_Road_Middle_Street_Line {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px 0px 0px;
+    background-image: url(/_images/_under_Of_The_Road_Middle_line_Image.png);
+    animation: _under_Of_The_Road_Middle_Street_Line 0s infinite;
+    transition: var(--TRANSISTION);
+}
+
+body ._elements_Of_Roads ._right_Side_Zebra_Line {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/_images/_right_Side_Zebra_Line_Image.png);
+    background-repeat: no-repeat;
+    top: -135px;
+    right: -10px;
+    animation: _right_Side_Zebra_Line 0s infinite;
+    transition: var(--TRANSISTION);
+}
+
+body ._elements_Of_Roads ._left_Side_Zebra_Line {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(/_images/_left_Side_Zebbra_line_Image.png);
+    background-repeat: no-repeat;
+    top: -135px;
+    animation: _left_Side_Zebra_Line 0s infinite;
+    transition: var(--TRANSISTION);
+}
+
+body ._elements_Of_Roads ._lamp_Post_Of_Left_Side {
+
+    width: 100%;
+    height: 100%;
+    background-image: url(/_images/_lamp_Post_Of_Left_Side_image.png);
+    position: absolute;
+    top: -135px;
+    animation: _lamp_Post_Of_Left_Side 0s infinite;
+    transition: var(--TRANSISTION);
+}
+
+body ._elements_Of_Roads ._lamp_Post_Of_Right_Side {
+
+    height: 100%;
+    width: 100%;
+    background-image: url(/_images/_lamp_Post_Of_Right_Side_image.png);
+    /* background-size: 600px 1000px; */
+    position: absolute;
+    background-color: rgba(238, 255, 0, 0);
+    top: -135px;
+    animation: _lamp_Post_Of_Right_Side 0s infinite;
+    transition: var(--TRANSISTION);
+}
+
+/* My car section */
+body .My_Car_Section {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(224, 69, 69, 0);
+}
+
+body .My_Car_Section ._my_Car {
+    width: 20%;
+    height: 30vh;
+    margin: 30vh 0px 0px -10px;
+    position: absolute;
+    top: 100px;
+    background-image: url(/_images/_my_Car_Image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    background-color: rgba(255, 230, 0, 0);
+}
+
+body .My_Car_Section ._back_Side_Two_Wheel_Of_My_Car {
+    width: 20%;
+    height: 30vh;
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 25%;
+    background-image: url(/_images/_back_Side_Two_Wheel.png);
+    background-size: cover;
+    background-position: 0px -100px;
+    animation: _back_Side_Two_Wheel_Of_My_Car 0.5s infinite;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* Clouds */
+body ._cloud_Section {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 251, 0, 0.575) 20%, rgba(253, 253, 253, 0.671) 40%);
+}
+
+body ._cloud_Section ._cloud1 {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-left: -35%;
+    margin-top: 15px;
+    background-image: url(/_images/_cloud1.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    animation: _cloud_Mover 60s infinite;
+}
+
+body ._cloud_Section ._cloud2 {
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    margin-left: -35%;
+    margin-top: 15px;
+    background-image: url(/_images/_cloud2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    animation: _cloud_Mover 60s infinite;
+    animation-delay: 10s;
+}
+
+/* Control section */
+body ._control_Section {
+    width: 100%;
+    height: 15.5%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 83.5%;
+}
+
+body ._control_Section i {
+    display: inline-block;
+    margin-left: 3.5%;
+    font-size: 6rem;
+    color: rgb(255, 255, 255);
+
+}
+
+body ._control_Section :nth-child(2) {
+    display: inline-block;
+    margin-left: 80%;
+}
+
+/* Score section */
+body ._score_Section {
+    transition: 1s ease-in-out;
+    transition: 5s;
+    width: 100%;
+    height: 100%;
+    background-image: url(/_images/_score_Section_Image.png);
+    background-repeat: no-repeat;
+    background-color: rgba(235, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    transition: 0.200s;
+}
+
+body ._score_Section ._score_Container {
+    padding: 0px 5% 0px 10%;
+}
+
+body ._score_Section ._score_Container h1 {
+    font-family: lobster;
+    font-size: 2rem;
+    display: block;
+    margin-left: 45%;
+}
+
+body ._score_Section ._score_Container h5 {
+    font-family: Abel;
+    color: rgba(109, 104, 104, 0.877);
+    display: block;
+    margin-left: 45%;
+}
+
+body ._score_Section ._score_Container h5 span {
+    color: rgba(0, 0, 0, 0.877);
+    cursor: pointer;
+}
+
+body ._score_Section ._score_Container ._range {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 45%;
+    outline: 0px;
+    background-color: rgb(0, 217, 255);
+    height: 15px;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+body ._score_Section ._score_Container ._range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+body ._score_Section ._score_Container ._range:hover {
+    opacity: 1;
+}
+
+body ._score_Section ._score_Container ._range:hover {
+    opacity: 1;
+}
+
+body ._score_Section ._score_Container ._range_For_Background_Music {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 20px;
+    width: 50%;
+    margin-left: 45%;
+    outline: 0px;
+    background-color: rgb(0, 217, 255);
+    height: 15px;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+
+}
+
+body ._score_Section ._score_Container ._range_For_Background_Music::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+}
+
+body ._score_Section ._score_Container ._range_For_Background_Music:hover {
+    opacity: 1;
+}
+
+body ._score_Section ._score_Container ._name {
+    display: block;
+    width: 200px;
+    border-radius: 210px;
+    margin-top: -35px;
+    margin-left: 63%;
+    font-family: Abel;
+    font-weight: bold;
+    outline: 0px;
+    border: 2px solid black;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+body ._score_Section ._score_Container ._Eroor {
+    margin-left: 63%;
+    margin-top: 5px;
+    display: block;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+    font-family: Abel;
+}
+
+body ._score_Section ._score_Container ._slider_Eroor {
+    color: red;
+    font-family: Abel;
+    font-weight: bold;
+    margin-left: 45%;
+}
+
+body ._score_Section ._score_Container ._play {
+    margin-left: 45%;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: rgb(0, 217, 255);
+    outline: 0px;
+    border: 1.5px solid black;
+    border-radius: 200px;
+    width: 80px;
+    height: 30px;
+}
+
+body ._score_Section ._score_Container ._play:hover {
+    background-color: rgb(1, 205, 241);
+}
+
+body footer {
+    background-color: rgba(214, 23, 23, 0);
+    margin-left: 48%;
+    width: 50.5%;
+    margin-top: 11%;
+}
+
+body footer section ul li {
+    display: inline;
+}
+
+body footer section ul li .fa {
+    color: black;
+    font-size: 1.5em;
+    margin-left: 10px;
+    opacity: 0.8;
+}
+
+body footer section ul li .fa:hover {
+    opacity: 1;
+}
+
+body footer section h4 {
+    font-family: Abel;
+    margin-left: 1%;
+    opacity: 0.8;
+}
+
+/* Enemy car section */
+body ._enemy_Car_Section {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    height: 634px;
+    background-color: rgba(0, 217, 255, 0);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+body ._enemy_Car_Section ._styles_For_Enemy_Car {
+    background-size: contain;
+    background-position: 50% 0;
+    /* animation: _enmy_Car_Mover 5s infinite ease-in-out; */
+    background-color: rgba(255, 9, 9, 0);
+    background-repeat: no-repeat;
+}
+
+/* Coin */
+body ._coin_Section ._coind_Container {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    top: 40%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgba(255, 196, 0, 0);
+    box-sizing: border-box;
+    animation-duration: infinite;
+}
+
+body ._coin_Section ._coin {
+    width: 50px;
+    height: 50px;
+    /* animation: _animation_For_coin_Element_Target infinite ease-in-out; */
+    transition: var(--TRANSISTION);
+}

@@ -1,0 +1,77 @@
+/* Animations on here */
+/* 
+01)Element of roads.
+02)My car section/
+03)Clouds.
+*/
+/* Element of roads */
+@keyframes _under_Of_The_Road_Middle_Street_Line {
+    from {
+        transform: translateY(-20px);
+    }
+
+    to {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes _right_Side_Zebra_Line {
+    from {
+        transform: translateX(-3px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes _left_Side_Zebra_Line {
+    from {
+        transform: translateX(-3px);
+    }
+
+    to {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes _lamp_Post_Of_Left_Side {
+    from {
+        transform: translateX(1px);
+    }
+
+    to {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes _lamp_Post_Of_Right_Side {
+    from {
+        transform: translateX(-30px);
+    }
+
+    to {
+        transform: translateX(1px);
+    }
+}
+
+/* My car section */
+@keyframes _back_Side_Two_Wheel_Of_My_Car {
+    from {
+        transform: rotateX(10deg);
+    }
+
+    to {
+        transform: rotateX(-10deg);
+    }
+}
+/* Clouds */
+@keyframes _cloud_Mover {
+    from {
+        margin-left: -35%;
+    }
+
+    to {
+        margin-left: 110%;
+    }
+}
